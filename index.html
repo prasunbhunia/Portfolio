@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <nav class="navigation">
+    <!-- <div class="menu">
+      <div class="brand" style="padding-left: 4rem;">
+        <a href="index.html">Portfolio</a>
+      </div>
+      <div>
+        <ul class="nav-menu">
+          <li><a href="index.html">home</a></li>
+          <li><a href="work.html">work</a></li>
+          <li><a href="about.html">about me</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
+    </div> -->
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<!-- sphere animation  -->
+    <!-- https://unpkg.com/three@0.117.1/build/three.min.js -->
+  <!-- <script src="three.min.js"></script>
+  <script>
+        let scene, camera, renderer, circleGeo, circles;
+
+        function init(){
+          scene = new THREE.Scene();
+
+          camera = new THREE.PerspectiveCamera(60,window.innerWidth / window.innerHeight, 1, 1000);
+          camera.position.z = 0;
+          camera.rotation.x = Math.PI/2;
+
+          renderer = new THREE.WebGLRenderer();
+          renderer.setSize(window.innerWidth, window.innerHeight);
+          document.body.appendChild(renderer.domElement);
+
+          circleGeo = new THREE.Geometry();
+          for(let i=0; i<2000; i++){
+              circle = new THREE.Vector3(Math.random() * 600 - 300,Math.random() * 600 - 300,Math.random() * 600 - 300);
+              circle.velocity = 0;
+              circle.acceleration = 0.01;
+              circleGeo.vertices.push(circle);
+          }
+          let sprite = new THREE.TextureLoader().load( 'sphere.png' );
+          let circleMaterial = new THREE.PointsMaterial({
+              color: 0xaaaaaa,
+              size: 0.6,
+              map: sprite
+          });
+
+          circles = new THREE.Points(circleGeo,circleMaterial);
+          scene.add(circles);
+
+          animate();
+        }
+        function animate(){
+          circleGeo.vertices.forEach(p=>{
+              p.velocity += p.acceleration;
+              p.y -= p.velocity;
+              if(p.y < -200){
+                  p.y = 200;
+                  p.velocity = 0;
+              }
+          });
+          circleGeo.verticesNeedUpdate = true;
+          circles.rotation.y += 0.002;
+          renderer.render(scene, camera);
+          requestAnimationFrame(animate);
+        }
+
+        init();
+  </script> -->
+<!--x----sphere animation----x-->
+
+
+
+</body>
+</html>
