@@ -3,13 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.0/dist/ionicons.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+
+    <title>Portfolio | by prasun</title>
 </head>
 <body>
-
-  <nav class="navigation">
+  <div class="wrapper">
+    <div class="hero-section">
+      <div class="menu-btn">
+          <ion-icon name="menu-sharp"></ion-icon>
+      </div>
+    </div>
     <div class="menu">
+      <div class="close-btn">
+          <ion-icon name="close"></ion-icon>
+      </div>
+      <div class="nav">
+        <ul class="main-menu">
+          <li class="main-menu-item"><a href="#">Home</a></li>
+          <li class="main-menu-item"><a href="#">Projects &nbsp; <ion-icon name="add"></ion-icon></a>
+            <ul class="submenu">
+              <li class="submenu-item">
+                  <a href="#">Timeless flow</a>
+              </li>
+              <li class="submenu-item">
+                  <a href="#">Foretime</a>
+              </li>
+              <li class="submenu-item">
+                  <a href="#">Never again</a>
+              </li>
+              <li class="submenu-item">
+                  <a href="#">Departure</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-menu-item"><a href="#">My Story</a></li>
+          <li class="main-menu-item"><a href="#">Contact &nbsp; <ion-icon name="add"></ion-icon></a>
+            <ul class="submenu">
+              <li class="submenu-item">
+                  <a href="#">Call now</a>
+              </li>
+              <li class="submenu-item">
+                  <a href="#">Mail us</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="contact">
+        <p class="call"><ion-icon name="call"></ion-icon>&nbsp;&nbsp;&nbsp;+91 86688 05550</p>
+        <p class="mail"><ion-icon name="mail"></ion-icon>&nbsp;&nbsp;&nbsp;prasunbhunia99@gmail.com</p>
+      </div>
+      <div class="media">
+        <ul>
+          <li><a href="https://www.facebook.com/profile.php?id=100011151701622"><ion-icon name="logo-facebook"></ion-icon>&nbsp;&nbsp; Facebook</a></li>
+          <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></ion-icon>&nbsp;&nbsp; Instagram</a></li>
+          <li><a href="https://twitter.com/Bhuniaprasun99"><ion-icon name="logo-twitter"></ion-icon>&nbsp;&nbsp; Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="js/Dropdown.js"></script>
+
+
+  <!---------------- navigation menu ------------------------>
+  <nav class="navigation">
+    <div class="heading">
       <div class="brand" style="padding-left: 4rem;">
         <a href="index.html">Portfolio</a>
       </div>
@@ -23,38 +87,9 @@
       </div>
     </div>
   </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-<!-- sphere animation  -->
-   <!-- https://unpkg.com/three@0.117.1/build/three.min.js -->
-  <script src="three.min.js"></script>
+<!----------------- sphere animation ------------------------->
+<!------ https://unpkg.com/three@0.117.1/build/three.min.js -->
+  <script src="js/three.min.js"></script>
   <script>
         let scene, camera, renderer, circleGeo, circles;
 
@@ -76,7 +111,7 @@
               circle.acceleration = 0.01;
               circleGeo.vertices.push(circle);
           }
-          let sprite = new THREE.TextureLoader().load( 'sphere.png' );
+          let sprite = new THREE.TextureLoader().load( './assets/sphere.png' );
           let circleMaterial = new THREE.PointsMaterial({
               color: 0xaaaaaa,
               size: 0.6,
@@ -106,6 +141,7 @@
         init();
   </script>
 <!--x----sphere animation----x-->
+
 
 
 
